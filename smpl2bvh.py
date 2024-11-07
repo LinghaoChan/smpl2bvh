@@ -50,30 +50,30 @@ def smpl2bvh(model_path:str, poses:str, output:str, mirror:bool,
     """
     
     names = [
-        "Pelvis",
-        "Left_hip",
-        "Right_hip",
-        "Spine1",
-        "Left_knee",
-        "Right_knee",
-        "Spine2",
-        "Left_ankle",
-        "Right_ankle",
-        "Spine3",
-        "Left_foot",
-        "Right_foot",
-        "Neck",
-        "Left_collar",
-        "Right_collar",
-        "Head",
-        "Left_shoulder",
-        "Right_shoulder",
-        "Left_elbow",
-        "Right_elbow",
-        "Left_wrist",
-        "Right_wrist",
-        "Left_palm",
-        "Right_palm",
+        "Hips",            # 原来的 "Pelvis"
+        "LeftUpLeg",       # 原来的 "Left_hip"
+        "RightUpLeg",      # 原来的 "Right_hip"
+        "Spine",           # 原来的 "Spine1"
+        "LeftLeg",         # 原来的 "Left_knee"
+        "RightLeg",        # 原来的 "Right_knee"
+        "Spine1",          # 原来的 "Spine2"
+        "LeftFoot",        # 原来的 "Left_ankle"
+        "RightFoot",       # 原来的 "Right_ankle"
+        "Spine2",          # 原来的 "Spine3"
+        "LeftToe",         # 原来的 "Left_foot"
+        "RightToe",        # 原来的 "Right_foot"
+        "Neck",            # 原名相同
+        "LeftShoulder",    # 原来的 "Left_collar"
+        "RightShoulder",   # 原来的 "Right_collar"
+        "Head",            # 原名相同
+        "LeftArm",         # 原来的 "Left_shoulder"
+        "RightArm",        # 原来的 "Right_shoulder"
+        "LeftForeArm",     # 原来的 "Left_elbow"
+        "RightForeArm",    # 原来的 "Right_elbow"
+        "LeftHand",        # 原来的 "Left_wrist"
+        "RightHand",       # 原来的 "Right_wrist"
+        "LeftHandEnd",     # 原来的 "Left_palm"（在第一个BVH中可能是End Site）
+        "RightHandEnd",    # 原来的 "Right_palm"
     ]
     
     # I prepared smpl models only, 
